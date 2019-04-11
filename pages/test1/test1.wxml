@@ -1,0 +1,69 @@
+<!--pages/test1/test1.wxml-->
+<view class='container_test'>
+  <view class='test_title'>MYTEST</view>
+  <view class='test_search'>
+    <view class='search_input_box'>
+      <icon type='search' size='14'></icon>
+      <text class='search_input2'>搜索商品</text>
+    </view>
+    <text class='search_button'>搜索</text>
+  </view>
+  <view class='test_search'>
+    <view class='search_input_box'>
+      <icon type='search' size='14'></icon>
+      <input class='search_input' placeholder='搜索商品' placeholder-style='color:#999999'></input>
+    </view>
+    <text class='search_button'>搜索</text>
+  </view>
+
+  <scroll-view scroll-x class='test_scrollview'>
+    <view class='test_view'>
+      <view class='test_pack' data-id='1' bindtap='tap'>
+        <image class='test_img' src='../../images/vip.png'></image>
+        <view class='test_name'>你好</view>
+      </view>
+      <view class='test_pack' data-id='2' bindtap='tap'>
+        <image class='test_img' src='../../images/vip.png'></image>
+        <view class='test_name'>你好</view>
+      </view>
+      <view class='test_pack'>
+        <image class='test_img' src='../../images/vip.png'></image>
+        <view class='test_name'>你好</view>
+      </view>
+      <view class='test_pack'>
+        <image class='test_img' src='../../images/vip.png'></image>
+        <view class='test_name'>你好</view>
+      </view>
+      <view class='test_pack'>
+        <image class='test_img' src='../../images/vip.png'></image>
+        <view class='test_name'>你好</view>
+      </view>
+      <view class='test_pack'>
+        <image class='test_img' src='../../images/vip.png'></image>
+        <view class='test_name'>你好</view>
+      </view>
+    </view>
+  </scroll-view>
+
+  <swiper indicator-dots='true' indicator-color='lightgray' indicator-active-color='white' autoplay='true' interval='3000' duration='1000' circular='true'>
+    <swiper-item class='swiper-img_pack'>
+      <image class='swiper-img' src='../../images/box.png'></image>
+    </swiper-item>
+    <swiper-item class='swiper-img_pack'>
+      <image class='swiper-img' src='../../images/box.png'></image>
+    </swiper-item>
+    <swiper-item class='swiper-img_pack'>
+      <image class='swiper-img' src='../../images/box.png'></image>
+    </swiper-item>
+    <swiper-item class='swiper-img_pack'>
+      <image class='swiper-img' src='../../images/box.png'></image>
+    </swiper-item>
+  </swiper>
+  <view class='image_pack'>
+    <image class='image' src='../../images/box.png'></image>
+  </view>
+  <movable-area style="height: 200px; width: 200px; background: red;">
+    <movable-view style="height: 50px; width: 50px; background: blue;" x="{{x}}" y="{{y}}" direction="all"></movable-view>
+  </movable-area>
+
+</view>
